@@ -1,0 +1,22 @@
+{
+  "name": "elm-md",
+  "version": "0.1.0",
+  "description": "markdown editor written in Elm",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conorhastings/elm-md.git"
+  },
+  "keywords": [
+    "Elm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conorhastings/elm-md/issues"
+  },
+  "homepage": "https://github.com/conorhastings/elm-md#readme"
+}
