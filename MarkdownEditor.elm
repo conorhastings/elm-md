@@ -10,9 +10,6 @@ import Html.Events exposing (..)
 -- With this import we are only bringing a few specific functions into our
 -- namespace, specifically "id", "type'", "for", "value", and "class".
 import Html.Attributes exposing (id, type', for, value, class, style)
--- startapp is boilerplate that most elm apps will use to follow the recommended
--- elm architecture
-import StartApp.Simple as StartApp
 -- creates a view that is a navbar
 view =
     div
