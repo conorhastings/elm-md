@@ -1,0 +1,17 @@
+{
+	"env": {
+		"node": true,
+		"browser": true, // eslint-loader does not yet support deep .eslintrc trees.
+		"es6": true
+	},
+	"globals": {
+	},
+	// 0=off, 1=warning (no fail), 2=error (exit code of 1)
+	"rules": {
+		"indent": 2 // 4 space indention
+	},
+	"ecmaFeatures": {
+	},
+	"plugins": [
+	]
+}
