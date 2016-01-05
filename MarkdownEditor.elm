@@ -13,8 +13,8 @@ import Html.Attributes exposing (id, type', for, value, class, style)
 -- startapp is boilerplate that most elm apps will use to follow the recommended
 -- elm architecture
 import StartApp.Simple as StartApp
--- creates a view model that is a navbar
-view model =
+-- creates a view that is a navbar
+view =
     div
     [
         navStyle
@@ -24,16 +24,15 @@ view model =
 navStyle: Attribute
 navStyle =
     style
-    [
-        ("position",        "absolute")
-    ,   ("width",           "100%")
-    ,   ("height",          "55px")
-    ,   ("display",         "flex")
-    ,   ("flex-direction",  "row")
-    ,   ("background-color","#1abc9c")
-    ,   ("top",             "0")
-    ,   ("left",            "0")
-    ,   ("box-shadow",      "0px 2px 2px #34495e")
+    [   ("position", "absolute")
+    ,   ("width", "100%")
+    ,   ("height", "55px")
+    ,   ("display", "flex")
+    ,   ("flex-direction", "row")
+    ,   ("background-color", "#1abc9c")
+    ,   ("top", "0")
+    ,   ("left", "0")
+    ,   ("box-shadow", "0px 2px 2px #34495e")
     ]
 
-main = view {}
+main = view
