@@ -14,22 +14,53 @@ import Html.Attributes exposing (id, type', for, value, class, style)
 view =
     div
     [
-        navStyle
-    ][
+        containerStyle
+    ] [
+        div
+        [
+            navStyle
+        ][
+        ],
+        div
+        [
+            markdownStyle
+        ] [
+
+        ]
+    ]
+containerStyle: Attribute
+containerStyle =
+    style
+    [   ("position", "absolute")
+    ,   ("display", "flex")
+    ,   ("flex-direction", "column")
+    ,   ("flex-wrap", "no-wrap")
+    ,   ("align-items", "center")
+    ,   ("top", "0")
+    ,   ("bottom", "0")
+    ,   ("left", "0")
+    ,   ("right", "0")
+    ,   ("background-color", "#303030")
     ]
 
 navStyle: Attribute
 navStyle =
     style
-    [   ("position", "absolute")
-    ,   ("width", "100%")
+    [   ("width", "100%")
     ,   ("height", "55px")
     ,   ("display", "flex")
     ,   ("flex-direction", "row")
-    ,   ("background-color", "#1abc9c")
-    ,   ("top", "0")
-    ,   ("left", "0")
-    ,   ("box-shadow", "0px 2px 2px #34495e")
+    ,   ("background-color", "#212121")
+    ,   ("box-shadow", "0px 2px 2px #000000")
     ]
 
+markdownStyle: Attribute
+markdownStyle =
+    style
+    [   ("width", "75%")
+    ,   ("min-height", "400px")
+    ,   ("margin-top", "50px")
+    ,   ("background-color", "#424242")
+    ,   ("box-shadow", "0px 2px 5px #000000")
+    ]
 main = view
